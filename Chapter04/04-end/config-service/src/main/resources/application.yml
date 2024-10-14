@@ -14,7 +14,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/PolarBookshop/config-repo
+          uri: https://github.com/wive10/cloud-native-spring-in-action/tree/main/Chapter04/04-end/config-repo
           default-label: main
           timeout: 5
           clone-on-start: true

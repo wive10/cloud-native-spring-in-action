@@ -14,7 +14,7 @@ spring:
     import: "optional:configserver:"
   cloud:
     config:
-      uri: http://localhost:8888
+      uri: http://localhost:8888 #컨피그 서비스 먼저 띄우기
       request-connect-timeout: 5000 # 5s
       request-read-timeout: 5000 # 5s
       fail-fast: false # In production, set to true
@@ -28,7 +28,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh
+        include: refresh #refresh 엔드포인트를 포함하면, Actuator의 특정 기능을 활성화하여 해당 엔드포인트에 접근할 수 있게 됩니다.
 
 polar:
   greeting: Welcome to the local book catalog!
